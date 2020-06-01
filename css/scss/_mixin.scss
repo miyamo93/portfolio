@@ -1,8 +1,8 @@
 
 // レスポンシブ対応mixin///////////////////////////////////////
 $breakpoints: (
-  'sm': 'screen and (max-width: 560px)',
-  'md': 'screen and (max-width: 960px)',
+  'sm': 'screen and (max-width: 559px)',
+  'md': 'screen and (max-width: 959px)',
 ) !default;
 
 @mixin mq($breakpoint: md) {

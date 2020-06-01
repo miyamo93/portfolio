@@ -473,6 +473,7 @@ li {
   height: 100%;
   top: 0px;
   left: 0px;
+  background: #fff;
   z-index: 1;
 }
 
@@ -490,12 +491,23 @@ li {
 }
 
 .wrapper {
+  display: none;
   width: 100%;
   height: 100%;
 }
 
 header {
   width: 100%;
+}
+
+.drawer-hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 559px) {
+  .drawer-hamburger {
+    display: block;
+  }
 }
 
 .Header__links {

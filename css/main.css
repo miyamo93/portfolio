@@ -537,3 +537,26 @@ header {
   margin: 0 auto;
   padding: 30px;
 }
+
+.contents__menu {
+  /*slick setting*/
+}
+
+.contents__menu .slider {
+  margin: 100px auto;
+  width: 80%;
+}
+
+.contents__menu .slider img {
+  height: auto;
+  width: 100%;
+}
+
+.contents__menu .slick-prev:before,
+.contents__menu .slick-next:before {
+  color: #000;
+}
+
+.zs-slideshow:after {
+  background-image: none !important;
+}

@@ -75,9 +75,14 @@ header{
 }
 
 .contents{
+  width: 100%;
+  &__inner{
+    width: 1024px;
+    margin: 0 auto;
+  }
   &__menu{
     .slider{
-      margin: 100px auto;
+      margin: 0 auto;
       width: 80%;
   }
   .slider img{
@@ -89,6 +94,22 @@ header{
   .slick-next:before {
       color: #000;
   }
+  }
+}
+
+.newsList{
+  &__wrap{
+    display: flex;
+
+    &--time{
+      width: 20%;
+    }
+    &--label{
+      width: 10%;
+    }
+    &--item{
+      width: 70%;
+    }
   }
 }
 

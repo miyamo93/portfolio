@@ -538,12 +538,21 @@ header {
   padding: 30px;
 }
 
+.contents {
+  width: 100%;
+}
+
+.contents__inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
 .contents__menu {
   /*slick setting*/
 }
 
 .contents__menu .slider {
-  margin: 100px auto;
+  margin: 0 auto;
   width: 80%;
 }
 
@@ -555,6 +564,22 @@ header {
 .contents__menu .slick-prev:before,
 .contents__menu .slick-next:before {
   color: #000;
+}
+
+.newsList__wrap {
+  display: flex;
+}
+
+.newsList__wrap--time {
+  width: 20%;
+}
+
+.newsList__wrap--label {
+  width: 10%;
+}
+
+.newsList__wrap--item {
+  width: 70%;
 }
 
 .zs-slideshow:after {

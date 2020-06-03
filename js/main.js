@@ -4,6 +4,8 @@ $(function(){
     $('.drawer').drawer();
   });
 
+  $('.slider').slick();
+
   // ローディングgif////////////////////
     var h = $(window).height();
     

@@ -462,6 +462,10 @@ template {
 }
 
 /* IEハック用mixin */
+body {
+  font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+}
+
 li {
   list-style: none;
 }
@@ -491,7 +495,6 @@ li {
 }
 
 .wrapper {
-  display: none;
   width: 100%;
   height: 100%;
 }
@@ -543,7 +546,7 @@ header {
 }
 
 .contents__inner {
-  width: 1024px;
+  max-width: 1024px;
   margin: 0 auto;
 }
 
@@ -551,9 +554,13 @@ header {
   /*slick setting*/
 }
 
+.contents__menu .slick-slide {
+  outline: none;
+}
+
 .contents__menu .slider {
   margin: 0 auto;
-  width: 80%;
+  width: 100%;
 }
 
 .contents__menu .slider img {
@@ -564,6 +571,18 @@ header {
 .contents__menu .slick-prev:before,
 .contents__menu .slick-next:before {
   color: #000;
+}
+
+.contents__menu .sliderThumb .slick-current {
+  opacity: 0.5;
+}
+
+.contents__menu .sliderThumb p {
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  background-color: brown;
+  cursor: pointer;
 }
 
 .newsList {
@@ -595,8 +614,4 @@ header {
 
 .newsList__wrap__btn {
   display: block;
-}
-
-.zs-slideshow:after {
-  background-image: none !important;
 }

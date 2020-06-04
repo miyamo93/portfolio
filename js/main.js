@@ -4,7 +4,20 @@ $(function(){
     $('.drawer').drawer();
   });
 
-  $('.slider').slick();
+  $('.slider').slick({
+    asNavFor:'.sliderThumb',
+    arrows: false,
+    slidesToShow:1,
+    infinite:false,
+  });
+  $('.sliderThumb').slick({
+    asNavFor:'.slider',
+    swipe:false,
+    arrows: false,
+    slidesToShow:3,
+    infinite:false,
+    focusOnSelect: true,
+  });
 
   // ローディングgif////////////////////
     var h = $(window).height();

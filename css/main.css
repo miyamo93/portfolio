@@ -566,8 +566,19 @@ header {
   color: #000;
 }
 
+.newsList {
+  border-top: 1px solid #000;
+}
+
 .newsList__wrap {
   display: flex;
+  border-bottom: 1px solid #000;
+  padding: 10px 0;
+  font-size: 1.4rem;
+}
+
+.newsList__wrap:hover {
+  opacity: 0.5;
 }
 
 .newsList__wrap--time {
@@ -580,6 +591,10 @@ header {
 
 .newsList__wrap--item {
   width: 70%;
+}
+
+.newsList__wrap__btn {
+  display: block;
 }
 
 .zs-slideshow:after {

@@ -8,7 +8,7 @@ $(function(){
     asNavFor:'.sliderThumb',
     arrows: false,
     slidesToShow:1,
-    infinite:false,
+    swipe:false,
   });
   $('.sliderThumb').slick({
     asNavFor:'.slider',
@@ -17,6 +17,7 @@ $(function(){
     slidesToShow:3,
     infinite:false,
     focusOnSelect: true,
+    autoplay:false,
   });
 
   // ローディングgif////////////////////

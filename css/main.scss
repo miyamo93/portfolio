@@ -4,11 +4,13 @@
 @import "scss/mixin";
 
 body{
-  font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+  font-family: serif;
 }
 
 li{
+  
   list-style: none;
+  font-family: serif;
 }
  
   
@@ -77,6 +79,13 @@ header{
 
 .contents{
   width: 100%;
+  h2{
+    
+    font-size: 2.5rem;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    
+  }
   &__inner{
     max-width: 1024px;
     margin: 0 auto;
@@ -135,5 +144,8 @@ header{
     &__btn{
       display: block;
     }
+  }
+  .newsDown{
+    display: none;
   }
 }

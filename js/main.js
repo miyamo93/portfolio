@@ -32,4 +32,8 @@ $(function(){
     focusOnSelect: true,
     autoplay:false,
   });
+
+  $('.js-accordion').on("click", function() {
+    $(this).next().slideToggle();
+  });
 });

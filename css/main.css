@@ -461,13 +461,19 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: 'myfont';
+  src: url("./font/Butchery.ttf") format("ttf");
+}
+
 /* IEハック用mixin */
 body {
-  font-family: "YuGothic","Yu Gothic","Meiryo","ヒラギノ角ゴ","sans-serif";
+  font-family: serif;
 }
 
 li {
   list-style: none;
+  font-family: serif;
 }
 
 #loader-bg {
@@ -545,6 +551,12 @@ header {
   width: 100%;
 }
 
+.contents h2 {
+  font-size: 2.5rem;
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+
 .contents__inner {
   max-width: 1024px;
   margin: 0 auto;
@@ -614,4 +626,8 @@ header {
 
 .newsList__wrap__btn {
   display: block;
+}
+
+.newsList .newsDown {
+  display: none;
 }

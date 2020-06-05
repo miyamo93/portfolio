@@ -4,3 +4,8 @@ $font-Msize: 1.8rem;
 $font-Lsize: 2rem;
 $font-XLsize: 3rem;
 $font-XXlsize: 4rem;
+
+@font-face {
+  font-family: 'myfont';
+  src: url('./font/Butchery.ttf') format('ttf'),
+}

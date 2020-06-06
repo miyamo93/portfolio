@@ -67,6 +67,8 @@ header{
   display: flex;
   max-width: 1000px;
   margin: 0 auto;
+  padding: 100px 0;
+  height: 100vh;
   &__left{
     width: 25%;
   }
@@ -139,6 +141,17 @@ header{
     max-width: 1000px;
     margin: 0 auto;
   }
+  &__concept{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/woodback.jpg');
+    background-repeat: no-repeat;
+    h2{
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+  }
+
 }
 
 .newsList{

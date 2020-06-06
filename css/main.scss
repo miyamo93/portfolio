@@ -12,6 +12,10 @@ li{
   list-style: none;
   font-family: serif;
 }
+
+.zs-slideshow:after{
+  display: none;
+}
  
   
 #loader-bg {
@@ -59,6 +63,17 @@ header{
   background-color: #999;
 }
 
+.mainTop{
+  display: flex;
+  max-width: 1000px;
+  margin: 0 auto;
+  &__left{
+    width: 25%;
+  }
+  &__right{
+    width: 75%;
+  }
+}
 
 .Header{
   position: fixed;
@@ -87,7 +102,7 @@ header{
     
   }
   &__inner{
-    max-width: 1024px;
+    width: 100%;
     margin: 0 auto;
   }
   &__menu{
@@ -120,12 +135,15 @@ header{
       }
     }
   }
+  &__news{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
 }
 
 .newsList{
   border-top: 1px solid #000;
   &__wrap{
-    display: flex;
     border-bottom: 1px solid #000;
     padding: 10px 0;
     font-size: 1.4rem;
@@ -133,13 +151,12 @@ header{
       opacity: 0.5;
     }
     &--time{
-      width: 20%;
     }
     &--label{
-      width: 10%;
+
     }
     &--item{
-      width: 70%;
+
     }
     &__btn{
       display: block;

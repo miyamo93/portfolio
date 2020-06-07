@@ -18,22 +18,23 @@ $(function(){
   
   
   $('.slider').slick({
-    asNavFor:'.sliderThumb',
-    arrows: false,
     slidesToShow:1,
+    arrows: false,
     swipe:false,
+    asNavFor:'.sliderThumb',
   });
   $('.sliderThumb').slick({
-    asNavFor:'.slider',
+    slidesToShow:4,
     swipe:false,
     arrows: false,
-    slidesToShow:3,
     infinite:false,
     focusOnSelect: true,
     autoplay:false,
+    asNavFor:'.slider',
   });
 
   $('.js-accordion').on("click", function() {
     $(this).next().slideToggle();
+    $(this).hasClass("plus") && $(this).toggleClass("minus");
   });
 });

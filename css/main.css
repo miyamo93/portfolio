@@ -526,24 +526,53 @@ header {
 #demo-1 {
   overflow: hidden;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: #999;
 }
 
 .mainTop {
   display: flex;
-  max-width: 1000px;
+  width: 95%;
   margin: 0 auto;
-  padding: 100px 0;
+  padding: 15px 0;
   height: 100vh;
+  font-size: 1.2rem;
 }
 
 .mainTop__left {
-  width: 25%;
+  width: 300px;
+  padding: 0 10px;
+}
+
+.mainTop__left--address p {
+  padding: 5px 0;
+}
+
+.mainTop__left--image {
+  margin: 20px 0;
+}
+
+.mainTop__left--image img {
+  width: 100%;
+}
+
+.mainTop__left--menu {
+  margin-top: 50px;
+}
+
+.mainTop__left--menu li {
+  margin-top: 10px;
+}
+
+.mainTop__left--sns {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+  margin-top: 5px;
 }
 
 .mainTop__right {
-  width: 75%;
+  width: 100%;
 }
 
 .Header {
@@ -571,19 +600,38 @@ header {
   width: 100%;
 }
 
-.contents h2 {
-  font-size: 2.5rem;
-  padding-top: 30px;
-  padding-bottom: 15px;
-}
-
 .contents__inner {
   width: 100%;
   margin: 0 auto;
 }
 
 .contents__menu {
+  width: 95%;
+  margin: 0 auto;
   /*slick setting*/
+}
+
+.contents__menu .menuList {
+  width: 25%;
+}
+
+.contents__menu .menuList h2 {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 30px 0;
+}
+
+.contents__menu .menuList__item {
+  padding: 0 20px;
+  font-size: 1.2rem;
+}
+
+.contents__menu .menuList__item p:last-child {
+  text-align: right;
+}
+
+.contents__menu .menuList__image {
+  width: 75% !important;
 }
 
 .contents__menu .slick-slide {
@@ -595,6 +643,10 @@ header {
   width: 100%;
 }
 
+.contents__menu .slider .slick-slide {
+  display: flex;
+}
+
 .contents__menu .slider img {
   height: auto;
   width: 100%;
@@ -603,6 +655,10 @@ header {
 .contents__menu .slick-prev:before,
 .contents__menu .slick-next:before {
   color: #000;
+}
+
+.contents__menu .sliderThumb {
+  width: 100%;
 }
 
 .contents__menu .sliderThumb .slick-current {
@@ -618,14 +674,14 @@ header {
 }
 
 .contents__news {
-  max-width: 1000px;
+  max-width: 800px;
   margin: 0 auto;
+  padding: 60px 0;
 }
 
 .contents__concept {
   height: 100vh;
   width: 100%;
-  background-image: url("../img/woodback.jpg");
   background-repeat: no-repeat;
 }
 
@@ -639,19 +695,68 @@ header {
 }
 
 .newsList__wrap {
+  display: flex;
   border-bottom: 1px solid #000;
-  padding: 10px 0;
+  padding: 10px;
   font-size: 1.4rem;
+  width: 100%;
+  cursor: pointer;
 }
 
 .newsList__wrap:hover {
   opacity: 0.5;
 }
 
-.newsList__wrap__btn {
+.newsList__wrap--time {
+  width: 20%;
+}
+
+.newsList__wrap--label {
+  width: 10%;
+}
+
+.newsList__wrap--item {
+  width: 70%;
+}
+
+.newsList__btn {
   display: block;
+  position: relative;
 }
 
 .newsList .newsDown {
   display: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-bottom: 1px solid #000;
+}
+
+.plus::before {
+  position: absolute;
+  top: 21px;
+  right: 12px;
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-top: 2px solid #000;
+}
+
+.plus::after {
+  position: absolute;
+  top: 16px;
+  right: 18px;
+  content: '';
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-top: 2px solid #000;
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+.minus:after {
+  top: 22px;
+  right: 5px;
+  transform: translateX(-50%);
 }
